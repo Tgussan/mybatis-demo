@@ -22,7 +22,7 @@ public class MainController {
         newTodo.setTitle("飲み会");
         newTodo.setDetails("銀座 19:00");
 
-        todoMapper.insert(newTodo); // 新しいTodoをインサートする
+        todoMapper.insertA(newTodo); // 新しいTodoをインサートする
 
         Todo loadedTodo = todoMapper.select(newTodo.getId()); // インサートしたTodoを取得して標準出力する
         System.out.println("ID       : " + loadedTodo.getId());

@@ -6,6 +6,6 @@ import com.example.mybatisdemo.domain.Todo;
 
 @Mapper
 public interface TodoMapper {
-	void insert(Todo todo);
+	void insertA(Todo todo);
     Todo select(int id);
 }
